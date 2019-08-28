@@ -1,0 +1,11 @@
+name: Release
+on:
+  release:
+    action:
+      - published
+jobs:
+  release-job:
+    name: Release Job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello
