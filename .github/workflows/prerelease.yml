@@ -1,5 +1,8 @@
 name: Prerelease
-on: release
+on:
+  release:
+    action:
+      - prereleased
 jobs:
   prerelease-job:
     name: Prerelease Job
