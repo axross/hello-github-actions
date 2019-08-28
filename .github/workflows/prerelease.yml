@@ -1,0 +1,9 @@
+name: Prerelease
+on: release
+jobs:
+  prerelease-job:
+    name: Prerelease Job
+    runs-on: ubuntu-latest
+    steps:
+      if: github.event.action == 'prereleased'
+      run: echo hello
