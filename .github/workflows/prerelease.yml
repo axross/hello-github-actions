@@ -7,6 +7,5 @@ jobs:
     steps:
       - if: github.event.action == 'prereleased'
         run: echo hello
-    steps:
       - if: github.event.action == 'published'
         run: echo bye
