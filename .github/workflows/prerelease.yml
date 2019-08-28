@@ -5,5 +5,5 @@ jobs:
     name: Prerelease Job
     runs-on: ubuntu-latest
     steps:
-      if: github.event.action == 'prereleased'
-      run: echo hello
+      - if: github.event.action == 'prereleased'
+        run: echo hello
